@@ -96,7 +96,7 @@ const AutoCompleteArticlesComponent = ({ className }) => {
                 ) : (
                     !error && (
                         <Card className={styles.empty} notSelectable>
-                            <p>🔍 Artículos</p>
+                            <p>🔍 Inmuebles</p>
                         </Card>
                     )
                 )}

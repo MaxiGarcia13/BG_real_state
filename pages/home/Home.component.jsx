@@ -23,40 +23,40 @@ const ArticlesList = dynamic(import('../../src/components/organism/ArticlesList'
 const IndexComponent = () => {
     const images = [
         {
-            original: '/assets/gallery/0.jpg',
-            thumbnail: '/assets/gallery/0.jpg',
+            original: '/assets/gallery/0.png',
+            thumbnail: '/assets/gallery/0.png',
         },
         {
-            original: '/assets/gallery/1.jpg',
-            thumbnail: '/assets/gallery/1.jpg',
+            original: '/assets/gallery/1.png',
+            thumbnail: '/assets/gallery/1.png',
         },
         {
-            original: '/assets/gallery/2.jpg',
-            thumbnail: '/assets/gallery/2.jpg',
+            original: '/assets/gallery/2.png',
+            thumbnail: '/assets/gallery/2.png',
         },
         {
-            original: '/assets/gallery/3.jpg',
-            thumbnail: '/assets/gallery/0.jpg',
+            original: '/assets/gallery/3.png',
+            thumbnail: '/assets/gallery/0.png',
         },
         {
-            original: '/assets/gallery/4.jpg',
-            thumbnail: '/assets/gallery/4.jpg',
+            original: '/assets/gallery/4.png',
+            thumbnail: '/assets/gallery/4.png',
         },
         {
-            original: '/assets/gallery/5.jpg',
-            thumbnail: '/assets/gallery/5.jpg',
+            original: '/assets/gallery/5.png',
+            thumbnail: '/assets/gallery/5.png',
         },
         {
-            original: '/assets/gallery/6.jpg',
-            thumbnail: '/assets/gallery/6.jpg',
+            original: '/assets/gallery/6.png',
+            thumbnail: '/assets/gallery/6.png',
         },
         {
-            original: '/assets/gallery/7.jpg',
-            thumbnail: '/assets/gallery/7.jpg',
+            original: '/assets/gallery/7.png',
+            thumbnail: '/assets/gallery/7.png',
         },
         {
-            original: '/assets/gallery/8.jpg',
-            thumbnail: '/assets/gallery/8.jpg',
+            original: '/assets/gallery/8.png',
+            thumbnail: '/assets/gallery/8.png',
         },
     ];
     return (
@@ -83,7 +83,7 @@ const IndexComponent = () => {
             <section className={styles.footer}>
                 <Link href='/articles'>
                     <Button className={styles.button} secondary>
-                        Ver más inmuebles <Svg src='/assets/icons/chevron-right.svg' />
+                        Ver más inmuebles <Svg src='/assets/icons/chevron-right.png' />
                     </Button>
                 </Link>
             </section>

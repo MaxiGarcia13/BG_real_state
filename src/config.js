@@ -4,38 +4,24 @@ const location = {
     url: 'https://goo.gl/maps/GTiXmuDXht2Kv53e8',
 };
 const keywords = [
-    'Venta de vinos',
-    'Vinos Argentinos Premium',
-    'Vinos de Argentina Ultra Premium',
-    'Vinos Tumpeter Rutini',
-    'Vinos Rutini',
-    'VinosHumberto Canale',
-    'Vinos San Felipe',
-    'Vinos Pequeña vasija',
-    'Vinos Tumpeter',
-    'Bodega Bianchi',
-    'Vinos Bodega Bianchi',
-    'Bodega San Telmo',
-    'Vino Bodega San Telmo',
-    'Vino Mascota',
-    'Yerba Mate',
-    'Yerba Mate Amanda',
-    'Dulce de leche',
-    'Alfajores',
-    'Alfajores Havana',
-    'Alfajores Jorgito',
+    'bienes raices ',
+    'venden casas',
+    'propiedades rapido',
+    'apartamentos en renta',
+    'casas en venta',
+    'condominios en venta',
+    'terrenos en venta',
+    'agentes inmobiliarios',
 ];
 
 const config = {
     app: {
         location,
         phone,
-        name: 'VinosLM',
+        name: 'BG real estate',
         icon: '/favicon.png',
         mail: 'marianolasllamas@gmail.com',
-        description: `Encuentra los mejores productos argentinos en ${location.name}, tel: ${phone}, ${keywords.join(
-            ', '
-        )}`,
+        description: `BG real estate es una plataforma de bienes raices donde se venden casas y propiedades rapido y al mejor precio. Nuestros listados son apartamentos en renta, casas en venta, condominios en venta, terrenos en venta. Ademas contamos con los mejores agentes inmobiliarios quien le ayudarà en todo el proceso.`,
         keywords: keywords.join(', '),
     },
 };
