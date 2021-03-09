@@ -1,0 +1,49 @@
+@import '../../src/styles/variables.scss';
+
+.contact {
+    justify-content: center;
+    max-width: $max-width;
+    margin: 2rem auto;
+}
+.logo {
+    text-align: center;
+}
+.textfild {
+    margin: 1rem;
+    & label {
+        margin-bottom: 0.5rem;
+        color: $color-accent;
+        font-size: 15px;
+        font: bold;
+    }
+    & input {
+        box-sizing: border-box;
+    }
+    & textarea {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 0.5rem 0.25rem;
+        outline: none;
+        border: none;
+        border-radius: $border-radius;
+        background-color: $backgroudColor-secondary;
+        resize: none;
+
+        &:focus {
+            box-shadow: 0 0 0 2px $color-accent;
+        }
+    }
+}
+
+.Button {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        min-width: 200px;
+    }
+}

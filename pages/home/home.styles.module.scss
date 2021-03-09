@@ -1,0 +1,131 @@
+@import '../../src/styles/variables.scss';
+@import '../../src/styles/mediaqueries.scss';
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $max-width;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.galleryWrapper {
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.gallery {
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 30vh;
+
+    & * {
+        box-sizing: border-box;
+    }
+
+    & > * {
+        height: 100%;
+    }
+
+    & > *:first-of-type {
+        overflow: hidden;
+    }
+
+    & img {
+        object-fit: cover !important;
+        max-height: 30vh !important;
+        width: 100%;
+    }
+}
+.title {
+    margin-top: 2rem;
+
+    & > * {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.title,
+.articles {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.articles {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include phone {
+        & {
+            & > article {
+                margin: 1rem 0;
+                flex: 1;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+
+    & .button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 1rem;
+
+        & svg {
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+@mixin galleryMediaQueryStyle {
+    .galleryWrapper {
+        width: 100%;
+    }
+
+    .gallery {
+        max-width: unset;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0;
+        max-height: 500px;
+
+        & > *:first-of-type {
+            border-radius: unset;
+        }
+    }
+}
+
+@include tablet {
+    @include galleryMediaQueryStyle;
+}
+
+@include phone {
+    @include galleryMediaQueryStyle;
+}
+
+@include desktop {
+    .galleryWrapper {
+        background-color: $backgroudColor-third;
+    }
+
+    .gallery {
+        height: 50vh;
+
+        & img {
+            max-height: 50vh !important;
+        }
+    }
+}

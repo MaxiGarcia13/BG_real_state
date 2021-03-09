@@ -1,0 +1,28 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mediaqueries.scss';
+
+.wrapper {
+    order: 2;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex: 1;
+
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill, auto);
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+
+        &_card {
+            margin: 0;
+        }
+
+        @include phone {
+            display: block;
+        }
+    }
+}

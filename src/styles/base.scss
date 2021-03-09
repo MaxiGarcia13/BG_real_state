@@ -1,0 +1,19 @@
+@import './variables.scss';
+@import '~react-image-gallery/styles/scss/image-gallery.scss';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $font-family;
+    background-color: $backgroudColor-dark-primary;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: $font-family;
+    line-height: 1.6;
+}

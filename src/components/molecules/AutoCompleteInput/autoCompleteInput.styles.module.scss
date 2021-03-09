@@ -1,0 +1,22 @@
+@import '../../../styles/variables.scss';
+
+.wrapper {
+    width: 100%;
+
+    & .itemContainer {
+        background-color: $backgroudColor-secondary;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        box-shadow: 0 0 0 2px $color-accent;
+        padding: 14px 1rem 1rem;
+        min-height: 100px;
+        max-height: 50vh;
+        transition: min-height 0.5s ease;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    &.expand {
+        display: contents;
+    }
+}

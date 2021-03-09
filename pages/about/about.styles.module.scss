@@ -1,0 +1,49 @@
+@import '../../src/styles/variables.scss';
+@import '../../src/styles/mediaqueries.scss';
+
+.wrapper {
+    max-width: $max-width;
+    margin: 2rem auto;
+
+    & .title {
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+    }
+
+    & .subtitle {
+        color: $color-accent;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    & p {
+        padding: 0.5rem 1rem;
+    }
+
+    & .backgroud {
+        max-height: 400px;
+        overflow: hidden;
+        padding: 0 0.5rem;
+        margin: 1rem 0;
+        border-radius: $border-radius;
+
+        & img {
+            max-width: 100%;
+            object-fit: cover;
+            transform: translateY(-60px);
+        }
+
+        @include phone {
+            padding: 0;
+            border-radius: 0;
+
+            & img {
+                max-width: $max-width;
+
+                transform: translate(-250px, -80px);
+            }
+        }
+    }
+}

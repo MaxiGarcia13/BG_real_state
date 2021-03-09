@@ -1,0 +1,28 @@
+@import '../../../styles/variables.scss';
+
+.wrapper {
+    display: flex;
+    padding: 1rem;
+    color: $font-color-secondary;
+    cursor: pointer;
+
+    & svg {
+        margin-right: 4px;
+        width: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & span {
+        border-bottom: 1px solid transparent;
+        &:active,
+        &:hover {
+            border-bottom: 1px solid currentColor;
+        }
+    }
+
+    &:active {
+        color: $color-accent-secondary;
+    }
+}

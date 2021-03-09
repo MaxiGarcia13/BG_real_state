@@ -1,0 +1,7 @@
+@import '../../../styles/variables.scss';
+.error {
+    & p {
+        text-align: center;
+        color: $font-color;
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "name": "vinoslm",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -H 0.0.0.0",
+        "build": "next build",
+        "start": "next start",
+        "prod": "npm run clean && npm run build && next export && npx serve out",
+        "clean": "rm -rf build && rm -rf build out"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.12.5",
+        "contentful": "^8.1.6",
+        "core-js": "^3.8.2",
+        "dotenv": "^8.2.0",
+        "next": "^10.0.0",
+        "next-redux-wrapper": "^6.0.2",
+        "nodemailer": "^6.4.17",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "react-image-gallery": "^1.0.8",
+        "react-loading-skeleton": "^2.1.1",
+        "react-redux": "^7.2.2",
+        "react-svg": "^11.2.1",
+        "redux": "^4.0.5",
+        "sass": "^1.30.0"
+    },
+    "browserslist": [
+        "last 3 and_chr versions",
+        "last 3 chrome versions",
+        "last 3 opera versions",
+        "last 3 ios_saf versions",
+        "last 3 safari versions"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/plugin-transform-runtime": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-react": "^7.12.10"
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../../styles/variables.scss';
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding-right: 1rem;
+
+    &_input {
+        max-width: 130px;
+        min-width: 120px;
+    }
+
+    &_button {
+        min-width: 150px;
+    }
+}

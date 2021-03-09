@@ -1,0 +1,99 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mediaqueries.scss';
+
+.button {
+    background: $backgroudColor-dark-primary;
+    box-shadow: unset;
+    position: relative;
+    padding: 0 0.5rem;
+    border: 1px solid transparent;
+    color: $font-color-third;
+
+    &,
+    & > *,
+    & > * > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & svg {
+        // fill: $font-color-third;
+        height: 20px;
+        width: 20px;
+    }
+
+    & .badge {
+        color: $font-color-third;
+        position: absolute;
+        right: -6px;
+        bottom: -4px;
+        background-color: $backgroudColor-dark-primary;
+        height: 16px;
+        width: 16px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    &:hover {
+        border: 1px solid $font-color-third;
+        background: $backgroudColor-dark-primary;
+
+        & .badge {
+            color: $color-accent;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: $backgroudColor-primary;
+    width: 450px;
+    max-height: 90%;
+    border-radius: $border-radius;
+    padding: 1rem;
+
+    & .title {
+        padding: 0 1rem 1rem 1rem;
+        border-bottom: 1px solid $backgroudColor-third;
+    }
+
+    & .list {
+        overflow: auto;
+    }
+
+    & .total {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1rem;
+        border-top: 1px solid $backgroudColor-third;
+        border-bottom: 1px solid $backgroudColor-third;
+    }
+
+    & .submit {
+        min-height: 40px;
+    }
+
+    @include phone {
+        & {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            margin-left: unset !important;
+            margin-top: unset !important;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+
+    & > * {
+        flex: 1;
+        margin: 0.5rem;
+    }
+}

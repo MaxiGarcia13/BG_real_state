@@ -1,0 +1,60 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/mediaqueries.scss';
+
+.card {
+    // display: flex;
+    padding: 0;
+
+    & .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        background-color: $backgroudColor-third;
+
+        & img {
+            object-fit: cover;
+            max-height: 182px;
+            width: 100%;
+        }
+
+        & .action {
+            display: flex;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+        }
+    }
+
+    & .body {
+        text-align: center;
+        padding: 0.5rem 1rem;
+
+        & em {
+            & span {
+                color: $color-accent;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    & .accent {
+        color: $color-accent;
+    }
+
+    @include phone {
+        & {
+            margin: 1rem 0;
+            flex: 1;
+            min-width: 200px;
+        }
+    }
+
+    @include tablet {
+        & {
+            flex: 1;
+            min-width: 250px;
+        }
+    }
+}

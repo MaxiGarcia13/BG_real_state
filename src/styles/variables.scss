@@ -1,0 +1,30 @@
+$max-width: 930px;
+
+$color-accent: #ffd354;
+$color-accent-secondary: blue;
+
+$font-family: 'Open Sans', sans-serif;
+$font-color: #0f1111;
+$font-color-secondary: #565959;
+$font-color-third: #fff;
+
+$backgroudColor-primary: #ffffff;
+$backgroudColor-secondary: #ffffff;
+$backgroudColor-third: #c3cfd5;
+
+$backgroudColor-dark-primary: #192532;
+$backgroudColor-dark-secondary: #283848;
+
+$border-radius: 4px;
+
+:export {
+    colorAccent: $color-accent;
+    fontFamily: $font-family;
+    fontColor: $font-color;
+    backgroudColorPrimary: $backgroudColor-primary;
+    backgroudColorSecondary: $backgroudColor-secondary;
+    backgroudColorDarkPrimary: $backgroudColor-dark-primary;
+    backgroudColorThird: $backgroudColor-third;
+    backgroudColorDarkSecondary: $backgroudColor-dark-secondary;
+    borderRadius: $border-radius;
+}

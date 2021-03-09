@@ -1,0 +1,64 @@
+@import '../../../styles/variables.scss';
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    max-width: 150px;
+    border: 1px solid $font-color;
+    border-radius: $border-radius;
+
+    &_input {
+        border-radius: 0;
+        outline: none;
+        box-shadow: none !important;
+        z-index: 0;
+        text-align: center;
+        /* Chrome, Safari, Edge, Opera */
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        &[type='number'] {
+            -moz-appearance: textfield;
+        }
+    }
+
+    &_button {
+        z-index: 1;
+        width: 40px;
+        border-top: unset !important;
+        border-bottom: unset !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & svg {
+            margin-top: 0.25rem;
+        }
+
+        &--left {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-left: unset !important;
+        }
+
+        &--right {
+            border-right: unset !important;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    &_button,
+    &_input {
+        height: 40px;
+        max-height: unset;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

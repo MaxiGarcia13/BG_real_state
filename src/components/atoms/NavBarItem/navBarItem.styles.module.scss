@@ -1,0 +1,32 @@
+@import '../../../styles/variables.scss';
+
+.navBarItem {
+    display: flex;
+    text-decoration: none;
+    border-radius: $border-radius;
+    color: $font-color-third;
+    border: 1px solid $backgroudColor-dark-secondary;
+
+    & a {
+        text-decoration: none;
+        padding: 0.25rem 1rem;
+
+        &,
+        &:visited,
+        &:active {
+            color: currentColor;
+        }
+
+        &:hover {
+            color: currentColor;
+        }
+    }
+
+    &:hover {
+        border: 1px solid currentColor;
+    }
+
+    &.active {
+        color: $color-accent;
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border-radius: $border-radius;
+    box-shadow: 0 0 0 2px $backgroudColor-dark-secondary;
+
+    & > .input {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    & > .icon {
+        background-color: $color-accent;
+        width: 60px;
+
+        & svg {
+            fill: $backgroudColor-dark-primary;
+        }
+    }
+
+    &:focus-within {
+        box-shadow: 0 0 0 2px $color-accent;
+    }
+}

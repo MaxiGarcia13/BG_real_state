@@ -1,0 +1,12 @@
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    & > * {
+        &:last-of-type {
+            margin-left: 0.5rem;
+            flex: 1;
+        }
+    }
+}

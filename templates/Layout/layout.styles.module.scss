@@ -1,0 +1,8 @@
+@import '../../src/styles/variables.scss';
+
+.wrapper {
+    background-color: $backgroudColor-primary;
+    height: fit-content;
+    display: block;
+    overflow: hidden;
+}

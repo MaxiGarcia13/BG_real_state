@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+.brand {
+    color: $font-color-third;
+    cursor: pointer;
+    & .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $color-accent;
+    }
+    & .description {
+        font-size: 0.8rem;
+    }
+}

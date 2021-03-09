@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & svg {
+        height: 24px;
+        width: 24px;
+        fill: currentColor;
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../../styles/variables.scss';
+.button {
+    height: 40px;
+    background-color: $color-accent;
+    border: 1px solid $color-accent;
+    border-radius: $border-radius;
+    border: unset;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+    outline: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: $font-color;
+
+    &:focus {
+        box-shadow: 0 0 0 2px currentColor;
+    }
+
+    &:hover {
+        background-color: lighten($color: $color-accent, $amount: 10);
+        transition: background-color 200ms ease-out;
+        box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302), 0 4px 8px 3px rgba(60, 64, 67, 0.149);
+    }
+
+    &.secondary {
+        background-color: transparent;
+        border: 1px solid $backgroudColor-dark-primary;
+        color: $backgroudColor-dark-primary;
+    }
+
+    &.iconButton {
+        height: 40px;
+        width: 40px;
+
+        & svg {
+            height: 20px;
+            width: 20px;
+        }
+    }
+}

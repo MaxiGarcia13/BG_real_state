@@ -1,0 +1,9 @@
+@import '../../../styles//variables.scss';
+
+$backgroud-loading: darken($backgroudColor-primary, 10%);
+$backgroud-loading-highlight: darken($backgroudColor-primary, 20%);
+
+:export {
+    backgroudLoading: $backgroud-loading;
+    backgroudLoadingHighlight: $backgroud-loading-highlight;
+}

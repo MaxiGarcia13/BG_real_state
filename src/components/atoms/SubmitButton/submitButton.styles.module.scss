@@ -1,0 +1,79 @@
+@import '../../../styles/variables.scss';
+$circle-size: 40px;
+
+.loading-btn {
+    $root: &;
+    position: relative;
+    width: 100%;
+    transition: all 0.33s ease-in-out;
+    min-width: 130px;
+
+    &--pending,
+    &--success,
+    &--fail {
+        width: $circle-size;
+        pointer-events: none;
+        cursor: default;
+        min-width: unset;
+
+        // Hide text
+        #{$root}__text {
+            opacity: 0;
+        }
+    }
+
+    &--pending {
+        background-color: lighten($color: $color-accent, $amount: 10);
+    }
+
+    &--success {
+        &,
+        &:hover {
+            background: #8bc34a;
+        }
+    }
+
+    // Fail state - show cross icon
+    &--fail {
+        &,
+        &:hover {
+            background: #ff5722;
+        }
+    }
+
+    &--svg {
+        &,
+        & div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & svg {
+            fill: $font-color-third;
+            animation: loading-btn--fade-in 0.6s ease;
+        }
+    }
+
+    &--secondary {
+        background-color: transparent;
+        color: $font-color;
+        border: 1px solid $font-color;
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        font-size: 13px;
+        color: #fff;
+
+        transition: inherit;
+    }
+}

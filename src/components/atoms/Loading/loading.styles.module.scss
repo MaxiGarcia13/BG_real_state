@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+
+.loading {
+    min-height: 20px;
+    min-width: 20px;
+    border: 2px solid $font-color-third;
+    border-top-color: $color-accent-secondary;
+    border-radius: 50%;
+    animation: loading-btn--fade-in 0.33s ease, loading-btn--rotation 0.66s linear 0s infinite;
+}
+
+/**
+ * Animations
+ */
+@keyframes loading-btn--fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loading-btn--rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
